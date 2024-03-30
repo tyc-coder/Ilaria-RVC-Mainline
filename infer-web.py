@@ -1314,11 +1314,20 @@ with gr.Blocks(title="Ilaria RVC 💖") as app:
                 )
             with gr.Group():
                 gr.Markdown(value=i18n(""))
+		pick = gr.slider(0,1,value=0,label="0 = Dataset path, 1 = Upload")
                 with gr.Row():
-                    trainset_dir4 = gr.Textbox(
-                        label=i18n("Path to Dataset"), value="dataset"
-                    )
+		    while 1:
+			    if pick = 1:
+				  trainset_dir4 = gr.Textbox(
+		                        label=i18n("Path to Dataset"), value="dataset"
+		                  )  
+			    else:
+				  trainset_dir4 = gr.Textbox(
+		                        label=i18n("Path to Dataset"), value="dataset"
+			          )
 
+				
+                    
             with gr.Group():
                 gr.Markdown(value=i18n(""))
                 with gr.Row():
